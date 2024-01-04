@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="b396fb5147af75d4d54c2eee316d43ba" sys_domain="global" table="x_dstubb_govee_sp_device" version="3" view="workspace-govee-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-04 23:16:31</sys_created_on>
+            <sys_id>0bf87b1d47af75d4d54c2eee316d43e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_dstubb_govee_sp_device" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">b396fb5147af75d4d54c2eee316d43ba</sys_ui_section>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-04 23:16:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_number</element>
+            <position>1</position>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-04 23:16:31</sys_created_on>
+            <sys_id>47f87b1d47af75d4d54c2eee316d43e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_dstubb_govee_sp_device" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">b396fb5147af75d4d54c2eee316d43ba</sys_ui_section>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-04 23:16:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mac_address</element>
+            <position>2</position>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-04 23:16:31</sys_created_on>
+            <sys_id>4ff87b1d47af75d4d54c2eee316d43e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_dstubb_govee_sp_device" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">b396fb5147af75d4d54c2eee316d43ba</sys_ui_section>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-04 23:16:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>true</header>
+            <name>x_dstubb_govee_sp_device</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-04 23:06:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b396fb5147af75d4d54c2eee316d43ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_dstubb_govee_sp_device</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+            <sys_update_name>sys_ui_section_b396fb5147af75d4d54c2eee316d43ba</sys_update_name>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-04 23:06:11</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace Govee 0" name="workspace-govee-0">8a963b5183af75d40aa3c7e4d007ea39</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

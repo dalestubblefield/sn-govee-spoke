@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="47f4b759476f75d4d54c2eee316d43fb" extends="cmdb_ci" label="Actif (comptable)" max_length="40" name="x_dstubb_govee_sp_device" type="collection"/>
+</database>

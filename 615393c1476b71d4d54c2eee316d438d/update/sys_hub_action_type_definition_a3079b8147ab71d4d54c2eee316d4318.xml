@@ -5,18 +5,19 @@
         <action_status/>
         <action_template/>
         <active>true</active>
-        <annotation>Get your devices from Govee, it will return the capabilities.</annotation>
+        <annotation>Retrieve a list of supported lights, plugs, and switches.</annotation>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Devices">a544fb55476f75d4d54c2eee316d439b</category>
         <copied_from/>
         <copied_from_name/>
-        <description>Get your devices from Govee, it will return the capabilities.</description>
+        <description>Retrieve a list of supported lights, plugs, and switches.</description>
         <ih_action>true</ih_action>
         <internal_name>get_devices</internal_name>
-        <label_cache>[{"name":"{{step[4335e8fb-0f99-449d-a1e6-d4ec75e4475d].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{"isLocal":"true"}},{"name":"{{step[031d98de-ac51-485d-9fe0-43c86d7b06e8].credential_value}}","label":"step➛Get Connection Info step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4335e8fb-0f99-449d-a1e6-d4ec75e4475d].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
+        <label_cache>[{"name":"{{step[4335e8fb-0f99-449d-a1e6-d4ec75e4475d].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{"isLocal":"true"}},{"name":"{{step[031d98de-ac51-485d-9fe0-43c86d7b06e8].credential_value}}","label":"step➛Get Connection Info step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4335e8fb-0f99-449d-a1e6-d4ec75e4475d].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[f1991731-c4ab-4ee1-b047-893efde09ad6].root.data}}","label":"step➛JSON Parser step➛root➛data","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f1991731-c4ab-4ee1-b047-893efde09ad6].root.data.devices}}","label":"step➛JSON Parser step➛root➛data➛devices","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master_snapshot>4d175b0547ab71d4d54c2eee316d43dd</master_snapshot>
-        <name>Get Devices</name>
+        <name>List Devices</name>
         <natlang/>
+        <outputs/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
         <state>published</state>
@@ -26,15 +27,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a3079b8147ab71d4d54c2eee316d4318</sys_id>
-        <sys_mod_count>38</sys_mod_count>
-        <sys_name>Get Devices</sys_name>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_name>List Devices</sys_name>
         <sys_overrides/>
         <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_a3079b8147ab71d4d54c2eee316d4318</sys_update_name>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-04 22:41:58</sys_updated_on>
+        <sys_updated_on>2024-01-04 22:56:30</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -68,10 +69,46 @@
         <value>0</value>
         <variable display_value="Don't Treat as Error">375a330947a3b1d4d54c2eee316d43e4</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_a3079b8147ab71d4d54c2eee316d4318^id=a3079b8147ab71d4d54c2eee316d4318"/>
+    <sys_element_mapping action="delete_multiple" query="id=a3079b8147ab71d4d54c2eee316d4318"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>devices</field>
+        <id>a3079b8147ab71d4d54c2eee316d4318</id>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 22:53:07</sys_created_on>
+        <sys_id>5ca3bf91476f75d4d54c2eee316d439b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 22:54:07</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a3079b8147ab71d4d54c2eee316d4318</table>
+        <value>{{step[f1991731-c4ab-4ee1-b047-893efde09ad6].root.data.devices}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>a3079b8147ab71d4d54c2eee316d4318</id>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 04:44:05</sys_created_on>
+        <sys_id>375a730947a3b1d4d54c2eee316d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 04:44:05</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a3079b8147ab71d4d54c2eee316d4318</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>a3079b8147ab71d4d54c2eee316d4318</id>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 04:44:05</sys_created_on>
+        <sys_id>735a730947a3b1d4d54c2eee316d431e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 04:44:05</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a3079b8147ab71d4d54c2eee316d4318</table>
+        <value/>
+    </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=a3079b8147ab71d4d54c2eee316d4318^sys_idNOT IN19603f55472f75d4d54c2eee316d4300,235a330947a3b1d4d54c2eee316d434e,f40fd7d1472b75d4d54c2eee316d4362"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Devices">a3079b8147ab71d4d54c2eee316d4318</action>
+        <action display_value="List Devices">a3079b8147ab71d4d54c2eee316d4318</action>
         <cid>f1991731-c4ab-4ee1-b047-893efde09ad6</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -201,7 +238,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>45b033d5472f75d4d54c2eee316d43b5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -209,7 +246,7 @@
         <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-04 22:41:55</sys_updated_on>
+        <sys_updated_on>2024-01-04 22:56:26</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -321,7 +358,7 @@
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Devices">a3079b8147ab71d4d54c2eee316d4318</action>
+        <action display_value="List Devices">a3079b8147ab71d4d54c2eee316d4318</action>
         <cid>4335e8fb-0f99-449d-a1e6-d4ec75e4475d</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -808,7 +845,7 @@
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Devices">a3079b8147ab71d4d54c2eee316d4318</action>
+        <action display_value="List Devices">a3079b8147ab71d4d54c2eee316d4318</action>
         <cid>031d98de-ac51-485d-9fe0-43c86d7b06e8</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -850,7 +887,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=f40fd7d1472b75d4d54c2eee316d4362"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_f40fd7d1472b75d4d54c2eee316d4362"/>
     <sys_hub_action_input action="delete_multiple" query="model=a3079b8147ab71d4d54c2eee316d4318"/>
-    <sys_hub_action_output action="delete_multiple" query="model=a3079b8147ab71d4d54c2eee316d4318^sys_idNOT IN235a330947a3b1d4d54c2eee316d43df,375a330947a3b1d4d54c2eee316d43e4"/>
+    <sys_hub_action_output action="delete_multiple" query="model=a3079b8147ab71d4d54c2eee316d4318^sys_idNOT IN235a330947a3b1d4d54c2eee316d43df,375a330947a3b1d4d54c2eee316d43e4,98a3bf91476f75d4d54c2eee316d438c"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -893,12 +930,12 @@
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Get Devices">a3079b8147ab71d4d54c2eee316d4318</model>
+        <model display_value="List Devices">a3079b8147ab71d4d54c2eee316d4318</model>
         <model_id>a3079b8147ab71d4d54c2eee316d4318</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_a3079b8147ab71d4d54c2eee316d4318</name>
         <next_element/>
-        <order>1</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -916,14 +953,14 @@
         <sys_created_by>dale.stubblefield</sys_created_by>
         <sys_created_on>2024-01-04 04:44:05</sys_created_on>
         <sys_id>235a330947a3b1d4d54c2eee316d43df</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-04 04:44:05</sys_updated_on>
+        <sys_updated_on>2024-01-04 22:53:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -980,12 +1017,12 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Get Devices">a3079b8147ab71d4d54c2eee316d4318</model>
+        <model display_value="List Devices">a3079b8147ab71d4d54c2eee316d4318</model>
         <model_id>a3079b8147ab71d4d54c2eee316d4318</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_a3079b8147ab71d4d54c2eee316d4318</name>
         <next_element/>
-        <order>2</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1003,14 +1040,14 @@
         <sys_created_by>dale.stubblefield</sys_created_by>
         <sys_created_on>2024-01-04 04:44:05</sys_created_on>
         <sys_id>375a330947a3b1d4d54c2eee316d43e4</sys_id>
-        <sys_mod_count>53</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-04 22:41:55</sys_updated_on>
+        <sys_updated_on>2024-01-04 22:56:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1025,10 +1062,120 @@
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=375a330947a3b1d4d54c2eee316d43e4"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=375a330947a3b1d4d54c2eee316d43e4"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDb2d33fd1d76f75d438cbbb69819c6090</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>615393c1476b71d4d54c2eee316d438d</scope_name>
+        <serialized_content>{"FlowDesigner:FDb2d33fd1d76f75d438cbbb69819c6090":{"$COCollectionField":[{"devices_object":{"controllable":"String","controllable.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"controllable\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"ee6909c4-e504-4944-997c-a11b717dfae9\"}"},"supportCmds":["Any"],"supportCmds.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"supportCmds\",\"mandatory\":\"false\",\"child_name\":\"supportCmds_string\",\"uiUniqueId\":\"5d350542-5a47-44a7-815c-36480103c40b\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"supportCmds_string\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"7\",\"max_length\":\"0\",\"child_uiUniqueId\":\"309f1d79-acc6-4387-a9c9-70c30d051b18\"}"},"model":"String","model.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"model\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"53989d62-22eb-49e2-bf68-f46dcfc6285e\"}"},"device":"String","device.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"device\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"41cafd3b-975b-4dfa-8e74-c6b011cc3f62\"}"},"deviceName":"String","deviceName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"deviceName\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"203d7203-21c9-4ab1-8280-151f22525248\"}"},"properties":{"colorTem":{"range":{"min":"String","min.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"min\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"c1a2108a-d02c-40c5-95fc-fab4a2bf1f29\"}"},"max":"String","max.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"max\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"18fabeed-9bde-47ff-be7e-3536b1fb9e56\"}"}},"range.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"range\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"0522bd8e-f24a-46ec-ad2a-e6edc174a1d2\"}"}},"colorTem.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"colorTem\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"d90b2fa9-b48e-46ae-a0fe-a9a27ef180a8\"}"}},"properties.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"properties\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"7011f6f3-d946-407a-a241-1ec770241528\"}"},"retrievable":"String","retrievable.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"retrievable\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"be332ad6-1288-4fcb-9f4f-1cefd381c57a\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"f1991731-c4ab-4ee1-b047-893efde09ad6\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Devices\",\"mandatory\":\"false\",\"child_name\":\"devices_object\",\"uiUniqueId\":\"469de757-dbb8-4f73-b28d-b2f6ef046b66\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDb2d33fd1d76f75d438cbbb69819c6090\",\"child_label\":\"devices_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"a8dfec01-ad23-497d-8751-a990cced2a09\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"bafb5961-fe89-4919-85a0-36176295f42b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDb2d33fd1d76f75d438cbbb69819c6090.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"f1991731-c4ab-4ee1-b047-893efde09ad6\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Devices\",\"mandatory\":\"false\",\"child_name\":\"devices_object\",\"uiUniqueId\":\"469de757-dbb8-4f73-b28d-b2f6ef046b66\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDb2d33fd1d76f75d438cbbb69819c6090\",\"child_label\":\"devices_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"a8dfec01-ad23-497d-8751-a990cced2a09\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"bafb5961-fe89-4919-85a0-36176295f42b\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 22:54:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>76d33fd1476f75d4d54c2eee316d4390</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 22:56:26</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=devices_object,child_name=devices_object,child_type=object,child_type_label=Object,child_uiUniqueId=bafb5961-fe89-4919-85a0-36176295f42b,co_type_name=FDb2d33fd1d76f75d438cbbb69819c6090,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=f1991731-c4ab-4ee1-b047-893efde09ad6,sourceType=step,sourceUiUniqueId=a8dfec01-ad23-497d-8751-a990cced2a09,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=469de757-dbb8-4f73-b28d-b2f6ef046b66</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>devices</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Devices</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="List Devices">a3079b8147ab71d4d54c2eee316d4318</model>
+        <model_id>a3079b8147ab71d4d54c2eee316d4318</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_a3079b8147ab71d4d54c2eee316d4318</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 22:53:07</sys_created_on>
+        <sys_id>98a3bf91476f75d4d54c2eee316d438c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 22:54:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=98a3bf91476f75d4d54c2eee316d438c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=98a3bf91476f75d4d54c2eee316d438c"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=a3079b8147ab71d4d54c2eee316d4318"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=a3079b8147ab71d4d54c2eee316d4318^sys_idNOT IN8d1713c147ab71d4d54c2eee316d43c0"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Get Devices">a3079b8147ab71d4d54c2eee316d4318</action_type_id>
+        <action_type_id display_value="List Devices">a3079b8147ab71d4d54c2eee316d4318</action_type_id>
         <sys_created_by>dale.stubblefield</sys_created_by>
         <sys_created_on>2024-01-04 02:09:53</sys_created_on>
         <sys_id>8d1713c147ab71d4d54c2eee316d43c0</sys_id>
@@ -1039,7 +1186,30 @@
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=8d1713c147ab71d4d54c2eee316d43c0"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a3079b8147ab71d4d54c2eee316d4318"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_a3079b8147ab71d4d54c2eee316d4318"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_a3079b8147ab71d4d54c2eee316d4318^sys_idNOT IN775a330947a3b1d4d54c2eee316d43e3,775a730947a3b1d4d54c2eee316d431b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_a3079b8147ab71d4d54c2eee316d4318^sys_idNOT IN54a3bf91476f75d4d54c2eee316d4391,775a330947a3b1d4d54c2eee316d43e3,775a730947a3b1d4d54c2eee316d431b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>devices</element>
+        <help/>
+        <hint/>
+        <label>Devices</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_a3079b8147ab71d4d54c2eee316d4318</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 22:53:07</sys_created_on>
+        <sys_id>54a3bf91476f75d4d54c2eee316d4391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 22:53:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__action_status__</element>
         <help/>
@@ -1089,45 +1259,46 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_a3079b8147ab71d4d54c2eee316d4318"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=a3079b8147ab71d4d54c2eee316d4318^sys_idNOT IN91179b0547ab71d4d54c2eee316d430f"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Get Devices">a3079b8147ab71d4d54c2eee316d4318</action_id>
+        <action_id display_value="List Devices">a3079b8147ab71d4d54c2eee316d4318</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"91179b0547ab71d4d54c2eee316d430f","name":"plan","plan_signature":null}}</plan>
-        <snapshot>70113b19472f75d4d54c2eee316d4369</snapshot>
+        <snapshot>b1647795476f75d4d54c2eee316d43eb</snapshot>
         <sys_created_by>dale.stubblefield</sys_created_by>
         <sys_created_on>2024-01-04 02:09:55</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>91179b0547ab71d4d54c2eee316d430f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-04 22:42:00</sys_updated_on>
+        <sys_updated_on>2024-01-04 22:56:33</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <action_status/>
         <action_template/>
-        <annotation>Get your devices from Govee, it will return the capabilities.</annotation>
+        <annotation>Retrieve a list of supported lights, plugs, and switches.</annotation>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Devices">a544fb55476f75d4d54c2eee316d439b</category>
         <copied_from/>
         <copied_from_name/>
-        <description>Get your devices from Govee, it will return the capabilities.</description>
+        <description>Retrieve a list of supported lights, plugs, and switches.</description>
         <internal_name>get_devices</internal_name>
-        <label_cache>[{"name":"{{step[4335e8fb-0f99-449d-a1e6-d4ec75e4475d].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{"isLocal":"true"}},{"name":"{{step[031d98de-ac51-485d-9fe0-43c86d7b06e8].credential_value}}","label":"step➛Get Connection Info step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4335e8fb-0f99-449d-a1e6-d4ec75e4475d].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
+        <label_cache>[{"name":"{{step[4335e8fb-0f99-449d-a1e6-d4ec75e4475d].sn_auth_token}}","label":"step➛REST step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{"isLocal":"true"}},{"name":"{{step[031d98de-ac51-485d-9fe0-43c86d7b06e8].credential_value}}","label":"step➛Get Connection Info step➛Credential Value","type":"step","ref":"","reference_display":"","base_type":"password2","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4335e8fb-0f99-449d-a1e6-d4ec75e4475d].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[f1991731-c4ab-4ee1-b047-893efde09ad6].root.data}}","label":"step➛JSON Parser step➛root➛data","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f1991731-c4ab-4ee1-b047-893efde09ad6].root.data.devices}}","label":"step➛JSON Parser step➛root➛data➛devices","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master>true</master>
-        <name>Get Devices</name>
+        <name>List Devices</name>
         <natlang/>
         <outputs/>
-        <parent_action display_value="Get Devices">a3079b8147ab71d4d54c2eee316d4318</parent_action>
+        <outputs/>
+        <parent_action display_value="List Devices">a3079b8147ab71d4d54c2eee316d4318</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>dale.stubblefield</sys_created_by>
         <sys_created_on>2024-01-04 02:09:54</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4d175b0547ab71d4d54c2eee316d43dd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1135,7 +1306,7 @@
         <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-04 22:41:56</sys_updated_on>
+        <sys_updated_on>2024-01-04 22:56:28</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1169,10 +1340,46 @@
         <value>0</value>
         <variable display_value="Don't Treat as Error">d5175b0547ab71d4d54c2eee316d43eb</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_4d175b0547ab71d4d54c2eee316d43dd^id=4d175b0547ab71d4d54c2eee316d43dd"/>
+    <sys_element_mapping action="delete_multiple" query="id=4d175b0547ab71d4d54c2eee316d43dd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>devices</field>
+        <id>4d175b0547ab71d4d54c2eee316d43dd</id>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 22:54:43</sys_created_on>
+        <sys_id>6ff3f715476f75d4d54c2eee316d4336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 22:54:43</sys_updated_on>
+        <table>var__m_sys_hub_action_output_4d175b0547ab71d4d54c2eee316d43dd</table>
+        <value>{{step[f1991731-c4ab-4ee1-b047-893efde09ad6].root.data.devices}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>4d175b0547ab71d4d54c2eee316d43dd</id>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 22:41:57</sys_created_on>
+        <sys_id>f8113b19472f75d4d54c2eee316d4366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 22:41:57</sys_updated_on>
+        <table>var__m_sys_hub_action_output_4d175b0547ab71d4d54c2eee316d43dd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>4d175b0547ab71d4d54c2eee316d43dd</id>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 02:09:54</sys_created_on>
+        <sys_id>d1175b0547ab71d4d54c2eee316d43f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 02:09:54</sys_updated_on>
+        <table>var__m_sys_hub_action_output_4d175b0547ab71d4d54c2eee316d43dd</table>
+        <value/>
+    </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=4d175b0547ab71d4d54c2eee316d43dd^sys_idNOT IN2011f719472f75d4d54c2eee316d43ed,2c11f719472f75d4d54c2eee316d43f4,34113b19472f75d4d54c2eee316d432a"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Devices">4d175b0547ab71d4d54c2eee316d43dd</action>
+        <action display_value="List Devices">4d175b0547ab71d4d54c2eee316d43dd</action>
         <cid>031d98de-ac51-485d-9fe0-43c86d7b06e8</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -1214,7 +1421,7 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=2011f719472f75d4d54c2eee316d43ed"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_2011f719472f75d4d54c2eee316d43ed"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Devices">4d175b0547ab71d4d54c2eee316d43dd</action>
+        <action display_value="List Devices">4d175b0547ab71d4d54c2eee316d43dd</action>
         <cid>4335e8fb-0f99-449d-a1e6-d4ec75e4475d</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -1701,7 +1908,7 @@
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get Devices">4d175b0547ab71d4d54c2eee316d43dd</action>
+        <action display_value="List Devices">4d175b0547ab71d4d54c2eee316d43dd</action>
         <cid>f1991731-c4ab-4ee1-b047-893efde09ad6</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -1831,7 +2038,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b0113b19472f75d4d54c2eee316d432d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1839,7 +2046,7 @@
         <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-04 22:41:57</sys_updated_on>
+        <sys_updated_on>2024-01-04 22:56:29</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -1951,7 +2158,117 @@
         <url_target/>
     </sys_documentation>
     <sys_hub_action_input action="delete_multiple" query="model=4d175b0547ab71d4d54c2eee316d43dd"/>
-    <sys_hub_action_output action="delete_multiple" query="model=4d175b0547ab71d4d54c2eee316d43dd^sys_idNOT INcd175b0547ab71d4d54c2eee316d43e2,d5175b0547ab71d4d54c2eee316d43eb"/>
+    <sys_hub_action_output action="delete_multiple" query="model=4d175b0547ab71d4d54c2eee316d43dd^sys_idNOT IN23f3b715476f75d4d54c2eee316d43de,cd175b0547ab71d4d54c2eee316d43e2,d5175b0547ab71d4d54c2eee316d43eb"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD63f3b715de6f75d43f9913f08ed53bdd</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>615393c1476b71d4d54c2eee316d438d</scope_name>
+        <serialized_content>{"FlowDesigner:FD63f3b715de6f75d43f9913f08ed53bdd":{"$COCollectionField":[{"devices_object":{"controllable":"String","controllable.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"controllable\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"ee6909c4-e504-4944-997c-a11b717dfae9\"}"},"supportCmds":["Any"],"supportCmds.$field_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"supportCmds\",\"mandatory\":\"false\",\"child_name\":\"supportCmds_string\",\"uiUniqueId\":\"5d350542-5a47-44a7-815c-36480103c40b\",\"uiTypeLabel\":\"Array.String\",\"child_label\":\"supportCmds_string\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"7\",\"max_length\":\"0\",\"child_uiUniqueId\":\"309f1d79-acc6-4387-a9c9-70c30d051b18\"}"},"model":"String","model.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"model\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"53989d62-22eb-49e2-bf68-f46dcfc6285e\"}"},"device":"String","device.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"device\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"41cafd3b-975b-4dfa-8e74-c6b011cc3f62\"}"},"deviceName":"String","deviceName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"deviceName\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"203d7203-21c9-4ab1-8280-151f22525248\"}"},"properties":{"colorTem":{"range":{"min":"String","min.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"min\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"c1a2108a-d02c-40c5-95fc-fab4a2bf1f29\"}"},"max":"String","max.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"max\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"18fabeed-9bde-47ff-be7e-3536b1fb9e56\"}"}},"range.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"range\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"0522bd8e-f24a-46ec-ad2a-e6edc174a1d2\"}"}},"colorTem.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"colorTem\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"d90b2fa9-b48e-46ae-a0fe-a9a27ef180a8\"}"}},"properties.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"properties\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"7011f6f3-d946-407a-a241-1ec770241528\"}"},"retrievable":"String","retrievable.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"retrievable\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"be332ad6-1288-4fcb-9f4f-1cefd381c57a\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"f1991731-c4ab-4ee1-b047-893efde09ad6\",\"default_value\":\"\",\"label\":\"Devices\",\"mandatory\":\"false\",\"child_name\":\"devices_object\",\"uiUniqueId\":\"469de757-dbb8-4f73-b28d-b2f6ef046b66\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD63f3b715de6f75d43f9913f08ed53bdd\",\"child_label\":\"devices_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"a8dfec01-ad23-497d-8751-a990cced2a09\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"bafb5961-fe89-4919-85a0-36176295f42b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD63f3b715de6f75d43f9913f08ed53bdd.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"f1991731-c4ab-4ee1-b047-893efde09ad6\",\"default_value\":\"\",\"label\":\"Devices\",\"mandatory\":\"false\",\"child_name\":\"devices_object\",\"uiUniqueId\":\"469de757-dbb8-4f73-b28d-b2f6ef046b66\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD63f3b715de6f75d43f9913f08ed53bdd\",\"child_label\":\"devices_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"a8dfec01-ad23-497d-8751-a990cced2a09\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"bafb5961-fe89-4919-85a0-36176295f42b\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 22:54:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>27f3b715476f75d4d54c2eee316d43dd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 22:56:29</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=devices_object,child_name=devices_object,child_type=object,child_type_label=Object,child_uiUniqueId=bafb5961-fe89-4919-85a0-36176295f42b,co_type_name=FD63f3b715de6f75d43f9913f08ed53bdd,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=f1991731-c4ab-4ee1-b047-893efde09ad6,sourceType=step,sourceUiUniqueId=a8dfec01-ad23-497d-8751-a990cced2a09,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=469de757-dbb8-4f73-b28d-b2f6ef046b66</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>devices</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Devices</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="List Devices">4d175b0547ab71d4d54c2eee316d43dd</model>
+        <model_id>4d175b0547ab71d4d54c2eee316d43dd</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_4d175b0547ab71d4d54c2eee316d43dd</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 22:54:42</sys_created_on>
+        <sys_id>23f3b715476f75d4d54c2eee316d43de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 22:54:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=23f3b715476f75d4d54c2eee316d43de"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=23f3b715476f75d4d54c2eee316d43de"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1994,12 +2311,12 @@
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Get Devices">4d175b0547ab71d4d54c2eee316d43dd</model>
+        <model display_value="List Devices">4d175b0547ab71d4d54c2eee316d43dd</model>
         <model_id>4d175b0547ab71d4d54c2eee316d43dd</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_4d175b0547ab71d4d54c2eee316d43dd</name>
         <next_element/>
-        <order>1</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -2017,14 +2334,14 @@
         <sys_created_by>dale.stubblefield</sys_created_by>
         <sys_created_on>2024-01-04 02:09:54</sys_created_on>
         <sys_id>cd175b0547ab71d4d54c2eee316d43e2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-04 22:41:57</sys_updated_on>
+        <sys_updated_on>2024-01-04 22:54:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2081,12 +2398,12 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Get Devices">4d175b0547ab71d4d54c2eee316d43dd</model>
+        <model display_value="List Devices">4d175b0547ab71d4d54c2eee316d43dd</model>
         <model_id>4d175b0547ab71d4d54c2eee316d43dd</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_4d175b0547ab71d4d54c2eee316d43dd</name>
         <next_element/>
-        <order>2</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -2104,14 +2421,14 @@
         <sys_created_by>dale.stubblefield</sys_created_by>
         <sys_created_on>2024-01-04 02:09:54</sys_created_on>
         <sys_id>d5175b0547ab71d4d54c2eee316d43eb</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-04 22:41:57</sys_updated_on>
+        <sys_updated_on>2024-01-04 22:56:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2129,7 +2446,7 @@
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=4d175b0547ab71d4d54c2eee316d43dd"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=4d175b0547ab71d4d54c2eee316d43dd^sys_idNOT IN9d175b0547ab71d4d54c2eee316d43f5"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Get Devices">4d175b0547ab71d4d54c2eee316d43dd</action_type_id>
+        <action_type_id display_value="List Devices">4d175b0547ab71d4d54c2eee316d43dd</action_type_id>
         <sys_created_by>dale.stubblefield</sys_created_by>
         <sys_created_on>2024-01-04 02:09:55</sys_created_on>
         <sys_id>9d175b0547ab71d4d54c2eee316d43f5</sys_id>
@@ -2140,7 +2457,7 @@
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=9d175b0547ab71d4d54c2eee316d43f5"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_4d175b0547ab71d4d54c2eee316d43dd"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_4d175b0547ab71d4d54c2eee316d43dd"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_4d175b0547ab71d4d54c2eee316d43dd^sys_idNOT IN59175b0547ab71d4d54c2eee316d43f0,d1175b0547ab71d4d54c2eee316d43ea"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_4d175b0547ab71d4d54c2eee316d43dd^sys_idNOT IN59175b0547ab71d4d54c2eee316d43f0,d1175b0547ab71d4d54c2eee316d43ea,eff3f715476f75d4d54c2eee316d4313"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
         <help/>
@@ -2184,6 +2501,29 @@
         <sys_update_name/>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
         <sys_updated_on>2024-01-04 02:09:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>devices</element>
+        <help/>
+        <hint/>
+        <label>Devices</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_4d175b0547ab71d4d54c2eee316d43dd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 22:54:42</sys_created_on>
+        <sys_id>eff3f715476f75d4d54c2eee316d4313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 22:54:42</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
