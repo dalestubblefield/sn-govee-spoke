@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias_templates">
+    <sys_alias_templates action="INSERT_OR_UPDATE">
+        <default_data_template>{&#13;
+	"credential": {&#13;
+		"api_key": "&lt;provider-api-key&gt;",&#13;
+		"name": "Govee Spoke Credential",&#13;
+		"table": "api_key_credentials"&#13;
+	},&#13;
+	"connection": {&#13;
+		"use_mid": false,&#13;
+		"connection_url": "https://&lt;provider-name&gt;.com",&#13;
+		"name": "Govee Connection",&#13;
+		"table": "http_connection",&#13;
+             "extended_attributes": {&#13;
+                        "api_version": "v1"&#13;
+                 }&#13;
+	}&#13;
+}</default_data_template>
+        <dynamic_data_schema>{&#13;
+	"connection_fields": [{&#13;
+		"name": "connection.name",&#13;
+		"label": "Connection Name",&#13;
+		"type": "text",&#13;
+		"defaultValue": "Govee Spoke Connection",&#13;
+		"hint": "Display name for the Connection"&#13;
+	}, {&#13;
+		"name": "connection.connection_url",&#13;
+		"label": "Connection URL",&#13;
+		"type": "text",&#13;
+		"defaultValue": "https://developer-api.govee.com",&#13;
+		"hint": "Connection URL for provider"&#13;
+	},&#13;
+    {&#13;
+      "name": "connection.extended_attributes.api_version",&#13;
+      "label": "API Version",&#13;
+      "type": "text",&#13;
+      "defaultValue": "v1",&#13;
+      "hint": "API Version of Govee APIs"&#13;
+    }],&#13;
+	"credential_fields": [{&#13;
+		"name": "credential.api_key",&#13;
+		"label": "API Key",&#13;
+		"type": "password",&#13;
+		"defaultValue": "",&#13;
+		"hint": "API Key associated with your Govee Account"&#13;
+	},&#13;
+    {&#13;
+      "name": "credential.name",&#13;
+      "label": "Credential Name",&#13;
+      "type": "text",&#13;
+      "defaultValue": "Govee Credentials",&#13;
+      "hint": ""&#13;
+    }]&#13;
+}</dynamic_data_schema>
+        <name>Govee</name>
+        <on_edit_script><![CDATA[(function execute(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData) {
+})(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData);
+]]></on_edit_script>
+        <post_process_script><![CDATA[(function execute(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData) {
+})(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData);
+]]></post_process_script>
+        <pre_edit_script><![CDATA[(function execute(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData) {
+   return [];
+})(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData);
+]]></pre_edit_script>
+        <sys_class_name>sys_alias_templates</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 04:11:00</sys_created_on>
+        <sys_id>a0c277894723b1d4d54c2eee316d43df</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Govee</sys_name>
+        <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_update_name>sys_alias_templates_a0c277894723b1d4d54c2eee316d43df</sys_update_name>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 15:32:27</sys_updated_on>
+    </sys_alias_templates>
+</record_update>

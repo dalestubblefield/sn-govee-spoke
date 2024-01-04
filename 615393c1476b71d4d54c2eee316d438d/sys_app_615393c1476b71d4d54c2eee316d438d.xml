@@ -21,7 +21,7 @@
         <runtime_access_tracking/>
         <scope>x_dstubb_govee_sp</scope>
         <scoped_administration>false</scoped_administration>
-        <short_description/>
+        <short_description>https://developer.govee.com/</short_description>
         <source>x_dstubb_govee_sp</source>
         <store_correlation_id/>
         <store_url/>
@@ -31,9 +31,9 @@
         <sys_created_by>dale.stubblefield</sys_created_by>
         <sys_created_on>2024-01-04 01:53:33</sys_created_on>
         <sys_id>615393c1476b71d4d54c2eee316d438d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-04 02:01:08</sys_updated_on>
+        <sys_updated_on>2024-01-04 02:11:05</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
@@ -44,7 +44,7 @@
         <x_snc_devtools_documentation_url/>
         <x_snc_devtools_maintainer/>
         <x_snc_devtools_maintainer_email/>
-        <x_snc_devtools_repo_url/>
+        <x_snc_devtools_repo_url>https://github.com/dalestubblefield/sn-govee-spoke.git</x_snc_devtools_repo_url>
     </sys_app>
     <sys_translated_text action="delete_multiple" query="documentkey=615393c1476b71d4d54c2eee316d438d"/>
     <sys_attachment action="INSERT_OR_UPDATE">
