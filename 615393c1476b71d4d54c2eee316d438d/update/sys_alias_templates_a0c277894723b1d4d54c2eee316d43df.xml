@@ -8,7 +8,7 @@
 	},&#13;
 	"connection": {&#13;
 		"use_mid": false,&#13;
-		"connection_url": "https://&lt;domain-name:port&gt;/api",&#13;
+		"connection_url": "https://developer-api.govee.com/v1/",&#13;
 		"name": "Govee Connection",&#13;
 		"table": "http_connection"&#13;
 	}&#13;
@@ -25,7 +25,7 @@
 		"name": "connection.connection_url",&#13;
 		"label": "Connection URL",&#13;
 		"type": "text",&#13;
-		"defaultValue": "https://&lt;provider-domain-name&gt;.com",&#13;
+		"defaultValue": "https://developer-api.govee.com/v1/",&#13;
 		"hint": "Connection URL for provider", &#13;
                 "mandatory":true&#13;
 	}],&#13;
@@ -93,13 +93,13 @@
         <sys_created_by>dale.stubblefield</sys_created_by>
         <sys_created_on>2024-01-04 04:11:00</sys_created_on>
         <sys_id>a0c277894723b1d4d54c2eee316d43df</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Govee</sys_name>
         <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
         <sys_update_name>sys_alias_templates_a0c277894723b1d4d54c2eee316d43df</sys_update_name>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-04 04:19:41</sys_updated_on>
+        <sys_updated_on>2024-01-04 04:38:54</sys_updated_on>
     </sys_alias_templates>
 </record_update>
