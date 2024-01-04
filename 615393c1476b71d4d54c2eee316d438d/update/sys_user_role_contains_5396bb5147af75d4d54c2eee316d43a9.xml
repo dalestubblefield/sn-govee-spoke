@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="canvas_user" name="canvas_user">8536f54bc713330072b211d4d8c26080</contains>
+        <role display_value="x_dstubb_govee_sp.user" name="x_dstubb_govee_sp.user">9105fb59476f75d4d54c2eee316d430f</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-04 23:06:10</sys_created_on>
+        <sys_id>5396bb5147af75d4d54c2eee316d43a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>canvas_user.x_dstubb_govee_sp.user</sys_name>
+        <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_update_name>sys_user_role_contains_5396bb5147af75d4d54c2eee316d43a9</sys_update_name>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-04 23:06:10</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>
