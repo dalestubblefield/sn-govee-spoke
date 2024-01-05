@@ -7,8 +7,11 @@
   * Devices
   * Commands
   * Supported commands (Devices to Commands m2m)
+* Subflows
+ * Update Govee Devices
 * Actions
   * List Devices
+  * Turn Device Off
 
 ## Planned Features
 
