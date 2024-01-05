@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f8fa739547ef75d4d54c2eee316d4331" label="Command" max_length="40" name="x_dstubb_govee_sp_command" type="collection">
+        <element display="true" label="Name" max_length="120" name="name" type="string"/>
+    </element>
+</database>

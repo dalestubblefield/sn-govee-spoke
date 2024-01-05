@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list_category">
+    <sys_ux_list_category action="DELETE">
+        <active>true</active>
+        <configuration display_value="Govee_menu_config">1b96bb5147af75d4d54c2eee316d4368</configuration>
+        <description/>
+        <order>200</order>
+        <sys_class_name>sys_ux_list_category</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-05 04:00:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0bf930e547afb5d4d54c2eee316d4384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Supported Commands</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_update_name>sys_ux_list_category_0bf930e547afb5d4d54c2eee316d4384</sys_update_name>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-05 04:00:30</sys_updated_on>
+        <title>Supported Commands</title>
+    </sys_ux_list_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</application>
+        <file_path/>
+        <instance_id>ca6b65731ba1b910fe1b43f4bd4bcb32</instance_id>
+        <instance_name>dalenowvan</instance_name>
+        <name>sys_ux_list_category_0bf930e547afb5d4d54c2eee316d4384</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list_category"><sys_ux_list_category action="INSERT_OR_UPDATE"><active>true</active><configuration display_value="Govee_menu_config">1b96bb5147af75d4d54c2eee316d4368</configuration><description/><order>200</order><sys_class_name>sys_ux_list_category</sys_class_name><sys_created_by>dale.stubblefield</sys_created_by><sys_created_on>2024-01-05 04:00:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0bf930e547afb5d4d54c2eee316d4384</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Supported Commands</sys_name><sys_overrides/><sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package><sys_policy/><sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope><sys_update_name>sys_ux_list_category_0bf930e547afb5d4d54c2eee316d4384</sys_update_name><sys_updated_by>dale.stubblefield</sys_updated_by><sys_updated_on>2024-01-05 04:00:30</sys_updated_on><title>Supported Commands</title></sys_ux_list_category></record_update>]]></payload>
+        <payload_hash>-2059905644</payload_hash>
+        <record_name>Supported Commands</record_name>
+        <reverted_from/>
+        <source>f1965f0147ab71d4d54c2eee316d43f9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-05 04:00:30</sys_created_on>
+        <sys_id>c3f930e547afb5d4d54c2eee316d4388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cd7c795eb0000001</sys_recorded_at>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-05 04:00:30</sys_updated_on>
+        <type>UX List Category</type>
+        <update_guid>87f930e5ecafb5d4be9404583dd4e887</update_guid>
+        <update_guid_history>87f930e5ecafb5d4be9404583dd4e887:-2059905644</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-05 04:00:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_list_category">sys_ux_list_category</sys_db_object>
+        <sys_id>0d803c1988354227997ffbca12baced9</sys_id>
+        <sys_metadata>0bf930e547afb5d4d54c2eee316d4384</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Supported Commands</sys_name>
+        <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_scope_delete display_value="">5c0a9c1a13734c20a14eaff07ebcc0c1</sys_scope_delete>
+        <sys_update_name>sys_ux_list_category_0bf930e547afb5d4d54c2eee316d4384</sys_update_name>
+        <sys_update_version display_value="sys_ux_list_category_0bf930e547afb5d4d54c2eee316d4384">c3f930e547afb5d4d54c2eee316d4388</sys_update_version>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-05 04:00:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

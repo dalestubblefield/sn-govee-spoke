@@ -3,62 +3,92 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_dstubb_govee_sp_device" element="NULL" name="x_dstubb_govee_sp_device" parent="NULL" relationship="NULL" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">9b08ff1947af75d4d54c2eee316d432d</list_id>
+            <list_id display_value="x_dstubb_govee_sp_device" element="NULL" name="x_dstubb_govee_sp_device" parent="NULL" relationship="NULL" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">0bfaece547abb5d4d54c2eee316d431c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>dale.stubblefield</sys_created_by>
-            <sys_created_on>2024-01-04 23:12:26</sys_created_on>
-            <sys_id>5708ff1947af75d4d54c2eee316d432e</sys_id>
+            <sys_created_on>2024-01-05 02:54:58</sys_created_on>
+            <sys_id>07faece547abb5d4d54c2eee316d431d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>dale.stubblefield</sys_updated_by>
-            <sys_updated_on>2024-01-04 23:12:26</sys_updated_on>
+            <sys_updated_on>2024-01-05 02:54:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>model_number</element>
-            <list_id display_value="x_dstubb_govee_sp_device" element="NULL" name="x_dstubb_govee_sp_device" parent="NULL" relationship="NULL" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">9b08ff1947af75d4d54c2eee316d432d</list_id>
+            <list_id display_value="x_dstubb_govee_sp_device" element="NULL" name="x_dstubb_govee_sp_device" parent="NULL" relationship="NULL" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">0bfaece547abb5d4d54c2eee316d431c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>dale.stubblefield</sys_created_by>
-            <sys_created_on>2024-01-04 23:12:26</sys_created_on>
-            <sys_id>5b08ff1947af75d4d54c2eee316d432e</sys_id>
+            <sys_created_on>2024-01-05 02:54:58</sys_created_on>
+            <sys_id>0bfaece547abb5d4d54c2eee316d431d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>dale.stubblefield</sys_updated_by>
-            <sys_updated_on>2024-01-04 23:12:26</sys_updated_on>
+            <sys_updated_on>2024-01-05 02:54:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>mac_address</element>
-            <list_id display_value="x_dstubb_govee_sp_device" element="NULL" name="x_dstubb_govee_sp_device" parent="NULL" relationship="NULL" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">9b08ff1947af75d4d54c2eee316d432d</list_id>
+            <list_id display_value="x_dstubb_govee_sp_device" element="NULL" name="x_dstubb_govee_sp_device" parent="NULL" relationship="NULL" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">0bfaece547abb5d4d54c2eee316d431c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>dale.stubblefield</sys_created_by>
-            <sys_created_on>2024-01-04 23:12:26</sys_created_on>
-            <sys_id>5f08ff1947af75d4d54c2eee316d432e</sys_id>
+            <sys_created_on>2024-01-05 02:54:58</sys_created_on>
+            <sys_id>0ffaece547abb5d4d54c2eee316d431d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>dale.stubblefield</sys_updated_by>
-            <sys_updated_on>2024-01-04 23:12:26</sys_updated_on>
+            <sys_updated_on>2024-01-05 02:54:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_updated_on</element>
-            <list_id display_value="x_dstubb_govee_sp_device" element="NULL" name="x_dstubb_govee_sp_device" parent="NULL" relationship="NULL" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">9b08ff1947af75d4d54c2eee316d432d</list_id>
+            <element>retrievable</element>
+            <list_id display_value="x_dstubb_govee_sp_device" element="NULL" name="x_dstubb_govee_sp_device" parent="NULL" relationship="NULL" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">0bfaece547abb5d4d54c2eee316d431c</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>dale.stubblefield</sys_created_by>
-            <sys_created_on>2024-01-04 23:12:26</sys_created_on>
-            <sys_id>5308ff1947af75d4d54c2eee316d432f</sys_id>
+            <sys_created_on>2024-01-05 02:54:58</sys_created_on>
+            <sys_id>03faece547abb5d4d54c2eee316d431e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>dale.stubblefield</sys_updated_by>
-            <sys_updated_on>2024-01-04 23:12:26</sys_updated_on>
+            <sys_updated_on>2024-01-05 02:54:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>controllable</element>
+            <list_id display_value="x_dstubb_govee_sp_device" element="NULL" name="x_dstubb_govee_sp_device" parent="NULL" relationship="NULL" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">0bfaece547abb5d4d54c2eee316d431c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-05 02:54:58</sys_created_on>
+            <sys_id>07faece547abb5d4d54c2eee316d431e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-05 02:54:58</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>supported_commands</element>
+            <list_id display_value="x_dstubb_govee_sp_device" element="NULL" name="x_dstubb_govee_sp_device" parent="NULL" relationship="NULL" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">0bfaece547abb5d4d54c2eee316d431c</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-05 02:54:58</sys_created_on>
+            <sys_id>0bfaece547abb5d4d54c2eee316d431e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-05 02:54:58</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -72,10 +102,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>dale.stubblefield</sys_created_by>
-            <sys_created_on>2024-01-04 23:12:26</sys_created_on>
+            <sys_created_on>2024-01-05 02:54:58</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>9b08ff1947af75d4d54c2eee316d432d</sys_id>
+            <sys_id>0bfaece547abb5d4d54c2eee316d431c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_dstubb_govee_sp_device</sys_name>
             <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
@@ -83,7 +113,7 @@
             <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
             <sys_update_name>sys_ui_list_x_dstubb_govee_sp_device_workspace-govee-0</sys_update_name>
             <sys_updated_by>dale.stubblefield</sys_updated_by>
-            <sys_updated_on>2024-01-04 23:12:26</sys_updated_on>
+            <sys_updated_on>2024-01-05 02:54:58</sys_updated_on>
             <sys_user/>
             <view display_value="Workspace Govee 0" name="workspace-govee-0">8a963b5183af75d40aa3c7e4d007ea39</view>
             <view_name/>

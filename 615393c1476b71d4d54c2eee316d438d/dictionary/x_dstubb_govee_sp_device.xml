@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="47f4b759476f75d4d54c2eee316d43fb" extends="cmdb_ci" label="Actif (comptable)" max_length="40" name="x_dstubb_govee_sp_device" type="collection"/>
+    <element db_object_id="47f4b759476f75d4d54c2eee316d43fb" extends="cmdb_ci" label="Actif (comptable)" max_length="40" name="x_dstubb_govee_sp_device" type="collection">
+        <element label="Color Temp Max" max_length="255" name="color_temp_max" type="integer"/>
+        <element label="Color Temp Min" max_length="255" name="color_temp_min" type="integer"/>
+        <element label="Controllable" max_length="255" name="controllable" type="boolean"/>
+        <element label="Retrievable" max_length="255" name="retrievable" type="boolean"/>
+    </element>
 </database>

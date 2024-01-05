@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-05 14:35:55</sys_created_on>
+        <sys_id>4b6bc32d47ef39d4d54c2eee316d43fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_dstubb_govee_sp_device_to_command_m2m.x_dstubb_govee_sp.device_to_command_m2m_user</sys_name>
+        <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_security_acl display_value="x_dstubb_govee_sp_device_to_command_m2m">4b6bc32d47ef39d4d54c2eee316d43f7</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_4b6bc32d47ef39d4d54c2eee316d43fd</sys_update_name>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-05 14:35:55</sys_updated_on>
+        <sys_user_role display_value="x_dstubb_govee_sp.device_to_command_m2m_user" name="x_dstubb_govee_sp.device_to_command_m2m_user">ae6b8fa947ef39d4d54c2eee316d43b1</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
