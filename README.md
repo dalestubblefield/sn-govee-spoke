@@ -1,5 +1,17 @@
-# sn-govee-spoke
+# Govee Spoke for ServiceNow
 
-Reference links
+## Current Features
 
-https://govee.readme.io/
+* List Devices
+
+## Planned Features
+
+* Get Device State
+* Control Device
+* List Appliances
+* Control Appliance
+
+
+## Reference links
+
+* https://govee.readme.io/
