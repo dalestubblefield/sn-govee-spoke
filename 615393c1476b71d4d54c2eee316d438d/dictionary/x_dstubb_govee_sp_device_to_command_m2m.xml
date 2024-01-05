@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="914b83a947ef39d4d54c2eee316d4317" label="Device to Command M2M" max_length="40" name="x_dstubb_govee_sp_device_to_command_m2m" type="collection">
+        <element label="Command" max_length="32" name="command" reference="x_dstubb_govee_sp_command" type="reference"/>
+        <element label="Device" max_length="32" name="device" reference="x_dstubb_govee_sp_device" type="reference"/>
+        <index name="index">
+            <element name="command"/>
+        </index>
+        <index name="index2">
+            <element name="device"/>
+        </index>
+    </element>
+</database>

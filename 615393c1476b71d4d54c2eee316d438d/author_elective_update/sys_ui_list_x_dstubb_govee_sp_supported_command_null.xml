@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_dstubb_govee_sp_supported_command" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>govee_device</element>
+            <list_id display_value="x_dstubb_govee_sp_supported_command" element="NULL" name="x_dstubb_govee_sp_supported_command" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e20978a147afb5d4d54c2eee316d43a2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-05 03:56:23</sys_created_on>
+            <sys_id>260978a147afb5d4d54c2eee316d43a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-05 03:56:23</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>command</element>
+            <list_id display_value="x_dstubb_govee_sp_supported_command" element="NULL" name="x_dstubb_govee_sp_supported_command" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e20978a147afb5d4d54c2eee316d43a2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-05 03:56:23</sys_created_on>
+            <sys_id>2e0978a147afb5d4d54c2eee316d43a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-05 03:56:23</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_dstubb_govee_sp_supported_command</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-05 03:56:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e20978a147afb5d4d54c2eee316d43a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_dstubb_govee_sp_supported_command</sys_name>
+            <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+            <sys_update_name>sys_ui_list_x_dstubb_govee_sp_supported_command_null</sys_update_name>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-05 03:56:23</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</application>
+        <file_path/>
+        <instance_id>ca6b65731ba1b910fe1b43f4bd4bcb32</instance_id>
+        <instance_name>dalenowvan</instance_name>
+        <name>sys_ui_list_x_dstubb_govee_sp_supported_command_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_dstubb_govee_sp_supported_command" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>govee_device</element><list_id display_value="x_dstubb_govee_sp_supported_command" element="NULL" name="x_dstubb_govee_sp_supported_command" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e20978a147afb5d4d54c2eee316d43a2</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>dale.stubblefield</sys_created_by><sys_created_on>2024-01-05 03:56:23</sys_created_on><sys_id>260978a147afb5d4d54c2eee316d43a3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>dale.stubblefield</sys_updated_by><sys_updated_on>2024-01-05 03:56:23</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>command</element><list_id display_value="x_dstubb_govee_sp_supported_command" element="NULL" name="x_dstubb_govee_sp_supported_command" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">e20978a147afb5d4d54c2eee316d43a2</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>dale.stubblefield</sys_created_by><sys_created_on>2024-01-05 03:56:23</sys_created_on><sys_id>2e0978a147afb5d4d54c2eee316d43a3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>dale.stubblefield</sys_updated_by><sys_updated_on>2024-01-05 03:56:23</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_dstubb_govee_sp_supported_command</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>dale.stubblefield</sys_created_by><sys_created_on>2024-01-05 03:56:23</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e20978a147afb5d4d54c2eee316d43a2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_dstubb_govee_sp_supported_command</sys_name><sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package><sys_policy/><sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope><sys_update_name>sys_ui_list_x_dstubb_govee_sp_supported_command_null</sys_update_name><sys_updated_by>dale.stubblefield</sys_updated_by><sys_updated_on>2024-01-05 03:56:23</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>514332949</payload_hash>
+        <record_name>Supported Command</record_name>
+        <reverted_from/>
+        <source>f1965f0147ab71d4d54c2eee316d43f9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-05 03:56:23</sys_created_on>
+        <sys_id>620978a147afb5d4d54c2eee316d43a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cd7c3cfd20000001</sys_recorded_at>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-05 03:56:23</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>2a0978a14bafb5d4acdfdcc5425534a5</update_guid>
+        <update_guid_history>2a0978a14bafb5d4acdfdcc5425534a5:514332949,10a8346dfb6fb5d4fed876708746c71d:1399387388</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-05 14:52:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>47595a81200b48b4aae1890d3ca8d6a1</sys_id>
+        <sys_metadata>e20978a147afb5d4d54c2eee316d43a2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_dstubb_govee_sp_supported_command</sys_name>
+        <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+        <sys_parent display_value="">2567b0e9476fb5d4d54c2eee316d43b4</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_scope_delete display_value="">5c0a9c1a13734c20a14eaff07ebcc0c1</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_dstubb_govee_sp_supported_command_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_dstubb_govee_sp_supported_command_null">620978a147afb5d4d54c2eee316d43a6</sys_update_version>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-05 14:52:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

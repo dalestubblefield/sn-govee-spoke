@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_dstubb_govee_sp_supported_command</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_dstubb_govee_sp_supported_command</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-05 03:51:57</sys_created_on>
+        <sys_id>b90870ad476fb5d4d54c2eee316d4388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_dstubb_govee_sp_supported_command</sys_name>
+        <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_update_name>sys_security_acl_b90870ad476fb5d4d54c2eee316d4388</sys_update_name>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-05 03:51:57</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</application>
+        <file_path/>
+        <instance_id>ca6b65731ba1b910fe1b43f4bd4bcb32</instance_id>
+        <instance_name>dalenowvan</instance_name>
+        <name>sys_security_acl_b90870ad476fb5d4d54c2eee316d4388</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_dstubb_govee_sp_supported_command</description><local_or_existing>Local</local_or_existing><name>x_dstubb_govee_sp_supported_command</name><operation display_value="delete">delete</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>dale.stubblefield</sys_created_by><sys_created_on>2024-01-05 03:51:57</sys_created_on><sys_id>b90870ad476fb5d4d54c2eee316d4388</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_dstubb_govee_sp_supported_command</sys_name><sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package><sys_policy/><sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope><sys_update_name>sys_security_acl_b90870ad476fb5d4d54c2eee316d4388</sys_update_name><sys_updated_by>dale.stubblefield</sys_updated_by><sys_updated_on>2024-01-05 03:51:57</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>1830229675</payload_hash>
+        <record_name>x_dstubb_govee_sp_supported_command</record_name>
+        <reverted_from/>
+        <source>f1965f0147ab71d4d54c2eee316d43f9</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-05 03:51:57</sys_created_on>
+        <sys_id>b10870ad476fb5d4d54c2eee316d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cd7bfc1730000001</sys_recorded_at>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-05 03:51:57</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>b50870ad4f6fb5d47fcc49c5943de88d</update_guid>
+        <update_guid_history>b50870ad4f6fb5d47fcc49c5943de88d:1830229675</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>dale.stubblefield</sys_created_by>
+        <sys_created_on>2024-01-05 14:52:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>13ffdfa8fca64d7b907a79bb9b1ff661</sys_id>
+        <sys_metadata>b90870ad476fb5d4d54c2eee316d4388</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_dstubb_govee_sp_supported_command</sys_name>
+        <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+        <sys_parent display_value="">3d0870ad476fb5d4d54c2eee316d4393</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+        <sys_scope_delete display_value="">5c0a9c1a13734c20a14eaff07ebcc0c1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_b90870ad476fb5d4d54c2eee316d4388</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_b90870ad476fb5d4d54c2eee316d4388">b10870ad476fb5d4d54c2eee316d438e</sys_update_version>
+        <sys_updated_by>dale.stubblefield</sys_updated_by>
+        <sys_updated_on>2024-01-05 14:52:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

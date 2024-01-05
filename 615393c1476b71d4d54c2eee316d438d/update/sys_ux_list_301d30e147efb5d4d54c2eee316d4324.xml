@@ -56,21 +56,21 @@
         <roles/>
         <sys_class_name>sys_ux_list</sys_class_name>
         <sys_created_by>dale.stubblefield</sys_created_by>
-        <sys_created_on>2024-01-04 23:06:09</sys_created_on>
+        <sys_created_on>2024-01-05 04:14:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>9796bb5147af75d4d54c2eee316d4374</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Govee Devices</sys_name>
+        <sys_id>301d30e147efb5d4d54c2eee316d4324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Command</sys_name>
         <sys_overrides/>
         <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
-        <sys_update_name>sys_ux_list_9796bb5147af75d4d54c2eee316d4374</sys_update_name>
+        <sys_update_name>sys_ux_list_301d30e147efb5d4d54c2eee316d4324</sys_update_name>
         <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-05 04:02:27</sys_updated_on>
-        <table>x_dstubb_govee_sp_device</table>
-        <title>Govee Devices</title>
+        <sys_updated_on>2024-01-05 04:14:00</sys_updated_on>
+        <table>x_dstubb_govee_sp_command</table>
+        <title>Command</title>
         <view display_value="Workspace Govee 0" name="workspace-govee-0">8a963b5183af75d40aa3c7e4d007ea39</view>
         <word_wrap>false</word_wrap>
     </sys_ux_list>

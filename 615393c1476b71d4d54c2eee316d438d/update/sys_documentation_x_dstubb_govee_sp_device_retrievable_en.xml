@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="retrievable" label="Retrievable" language="en" table="x_dstubb_govee_sp_device">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>retrievable</element>
+            <help/>
+            <hint/>
+            <label>Retrievable</label>
+            <language>en</language>
+            <name>x_dstubb_govee_sp_device</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-04 23:24:16</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Retrievable</sys_name>
+            <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+            <sys_update_name>sys_documentation_x_dstubb_govee_sp_device_retrievable_en</sys_update_name>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-04 23:24:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

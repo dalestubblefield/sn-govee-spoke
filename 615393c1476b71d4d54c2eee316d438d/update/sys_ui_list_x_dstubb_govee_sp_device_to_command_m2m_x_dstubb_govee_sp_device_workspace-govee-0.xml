@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="x_dstubb_govee_sp_device" relationship="" sys_domain="global" table="x_dstubb_govee_sp_device_to_command_m2m" version="2" view="workspace-govee-0">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>command</element>
+            <list_id display_value="x_dstubb_govee_sp_device_to_command_m2m" element="NULL" name="x_dstubb_govee_sp_device_to_command_m2m" parent="x_dstubb_govee_sp_device" relationship="NULL" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">e26c4b6d47ef39d4d54c2eee316d43e7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-05 14:40:16</sys_created_on>
+            <sys_id>ee6c4b6d47ef39d4d54c2eee316d43e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-05 14:40:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>device</element>
+            <list_id display_value="x_dstubb_govee_sp_device_to_command_m2m" element="NULL" name="x_dstubb_govee_sp_device_to_command_m2m" parent="x_dstubb_govee_sp_device" relationship="NULL" sys_domain="global" view="8a963b5183af75d40aa3c7e4d007ea39">e26c4b6d47ef39d4d54c2eee316d43e7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-05 14:40:16</sys_created_on>
+            <sys_id>e26c4b6d47ef39d4d54c2eee316d43e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-05 14:40:16</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_dstubb_govee_sp_device_to_command_m2m</name>
+            <parent>x_dstubb_govee_sp_device</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>dale.stubblefield</sys_created_by>
+            <sys_created_on>2024-01-05 14:40:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e26c4b6d47ef39d4d54c2eee316d43e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_dstubb_govee_sp_device_to_command_m2m</sys_name>
+            <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
+            <sys_update_name>sys_ui_list_x_dstubb_govee_sp_device_to_command_m2m_x_dstubb_govee_sp_device_workspace-govee-0</sys_update_name>
+            <sys_updated_by>dale.stubblefield</sys_updated_by>
+            <sys_updated_on>2024-01-05 14:40:16</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace Govee 0" name="workspace-govee-0">8a963b5183af75d40aa3c7e4d007ea39</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
