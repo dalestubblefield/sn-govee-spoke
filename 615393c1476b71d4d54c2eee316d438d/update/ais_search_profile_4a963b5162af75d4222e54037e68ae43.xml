@@ -7,19 +7,19 @@
         <label>govee Search Profile</label>
         <name>x_dstubb_govee_sp_nkhtvo_search_profile</name>
         <publish_id>225277a7-f6e9-4508-a8e4-332d69b6dd6f</publish_id>
-        <qna_model_id/>
+        <qna_model_id>bert-qa-model-1.1.6</qna_model_id>
         <state>PUBLISHED</state>
         <sys_class_name>ais_search_profile</sys_class_name>
         <sys_created_by>dale.stubblefield</sys_created_by>
         <sys_created_on>2024-01-04 23:06:05</sys_created_on>
         <sys_id>4a963b5162af75d4222e54037e68ae43</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>govee Search Profile</sys_name>
         <sys_package display_value="Govee Spoke" source="x_dstubb_govee_sp">615393c1476b71d4d54c2eee316d438d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Govee Spoke">615393c1476b71d4d54c2eee316d438d</sys_scope>
         <sys_update_name>ais_search_profile_4a963b5162af75d4222e54037e68ae43</sys_update_name>
-        <sys_updated_by>dale.stubblefield</sys_updated_by>
-        <sys_updated_on>2024-01-04 23:06:05</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-04 23:23:15</sys_updated_on>
     </ais_search_profile>
 </record_update>
