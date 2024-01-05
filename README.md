@@ -2,14 +2,21 @@
 
 ## Current Features
 
-* List Devices
+* Workspace
+* Tables
+  * Devices
+  * Commands
+  * Supported commands (Devices to Commands m2m)
+* Actions
+  * List Devices
 
 ## Planned Features
 
-* Get Device State
-* Control Device
-* List Appliances
-* Control Appliance
+* Actions
+  * Get Device State
+  * Control Device
+  * List Appliances
+  * Control Appliance
 
 
 ## Reference links
